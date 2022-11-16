@@ -1,0 +1,157 @@
+/* credits to Isabella Crisostomo for the external css and designs po. :(( */
+body{
+  font-family: 'Poppins', sans-serif;
+  font-size:25;
+  padding:0px;
+  margin:0px;
+}
+p{
+  text-align:center;
+  margin:0px 60px;
+}
+p#left{   
+  margin-left:100px;
+  float:left;
+  text-align:left;
+}
+p#right{   
+  margin-right:100px;
+  float:right;
+  text-align:right;
+}
+h3{
+  margin-top:10px;
+  color:#006884;
+}
+h2{
+  margin-top:30px;
+  color:#006884;
+}
+h2#designer{
+  margin-top:280px;
+  color:white;
+  text-align:center;
+}
+span{
+  color:#EEBA2B;
+}
+span#two{
+  color:#AD8330;
+}
+
+/* for the title */
+.title{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 60px;
+  color: white;
+  text-align: center;  
+}
+p#title{
+  color:white;
+  font-size:30px;
+}
+
+/* navigation */
+.navbar{
+  overflow: hidden;
+  background-color: #045174;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.navbar a{
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover{
+  background: #FFFFFF;
+  color: black;
+}
+
+/* sidebar */
+a#sidebar{
+  color:white;
+  margin:10px;
+  font-size:20;
+}
+h3#sidebar{
+  color:white;
+  margin:10px;
+}
+.sidebar{
+  z-index:1;
+  top:0;
+  background:#27627D;
+  margin-top:53px;
+  padding-top:20px;
+  position:fixed;
+  left:0;
+  width:250px;
+  height:calc(100% - 5%);
+  transition:0.5s;
+  transition-property:left;
+  overflow-y:auto;
+  document.body.style.position = 'fixed';
+  document.body.style.top = `-${window.scrollY}px`;
+  document.body.style.position = '';
+  document.body.style.top = '';
+  const scrollY = document.body.style.top;
+  document.body.style.position = '';
+  document.body.style.top = '';
+  window.scrollTo(0, parseInt(scrollY || '0') * -1);
+}
+
+.sidebarcontent{
+  display:flex;
+  align-items: center;
+}
+
+.sidebar a{
+  color:white;
+  display:block;
+  width:100%;
+  line-height:60px;
+  text-decoration:none;
+  padding-left:5px;
+  box-sizing:border-box;
+}
+
+.sidebar a:hover{
+  background:#88A9C3;
+}
+
+#icon{
+  z-index:1;
+  position:fixed;
+  margin-left:15px;
+  height:35px;
+  width:30px;
+}
+  
+#check:checked ~ .sidebar{
+  left:-250px;
+}
+
+/* about the designer */
+p#info{
+  float:right;
+  text-align:right;
+  margin-right:5px;
+  margin-top:35px;
+  color:white;
+}
+img#members{
+  float:right;
+  margin-right:400px;
+  margin-top:20px;
+  color:white;
+  width:150px;
+  height:150px;
+}
+
